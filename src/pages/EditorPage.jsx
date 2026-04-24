@@ -1,4 +1,4 @@
-import { Github, Settings, Layout, ShieldCheck } from 'lucide-react';
+import { BookOpen, Settings, Layout, ShieldCheck } from 'lucide-react';
 import EditorSplitView from '../components/editor/EditorSplitView';
 import PullCord from '../components/common/PullCord';
 import ConfigModal from '../components/settings/ConfigModal';
@@ -136,20 +136,24 @@ export default function EditorPage() {
                         </button>
                     )}
                     <a
-                        href="https://github.com/WtecHtec/snapwrite"
+                        href="https://lcnawa17x4wt.feishu.cn/wiki/DruEwy887iaIIukTEK6cY84hntF?from=from_copylink"
                         target="_blank"
                         rel="noreferrer"
-                        title="View on GitHub"
+                        title="更多资料"
                         style={{
                             color: 'var(--text-secondary)',
                             display: 'flex',
                             alignItems: 'center',
-                            transition: 'color 0.2s'
+                            transition: 'color 0.2s',
+                            textDecoration: 'none',
+                            gap: '4px',
+                            fontSize: '0.9rem'
                         }}
                         onMouseOver={(e) => e.currentTarget.style.color = 'var(--text-main)'}
                         onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                     >
-                        <Github size={20} />
+                        <BookOpen size={20} />
+                        <span>更多资料</span>
                     </a>
                     <a href="/" style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textDecoration: 'none' }}>Back to Home</a>
                 </div>

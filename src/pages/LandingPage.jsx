@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { Github, Wand2, Smartphone, History, Zap, Layers, Share, Settings, ShieldCheck, Layout } from 'lucide-react';
+import { BookOpen, Wand2, Smartphone, History, Zap, Layers, Share, Settings, ShieldCheck, Layout } from 'lucide-react';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/layout/HeroSection';
 
@@ -115,7 +115,7 @@ export default function LandingPage() {
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
                     <a
-                        href="https://github.com/wtechtec/SnapWrite"
+                        href="https://lcnawa17x4wt.feishu.cn/wiki/DruEwy887iaIIukTEK6cY84hntF?from=from_copylink"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
@@ -124,13 +124,14 @@ export default function LandingPage() {
                             gap: '6px',
                             color: 'var(--text-secondary)',
                             transition: 'color 0.2s',
-                            fontWeight: 500
+                            fontWeight: 500,
+                            textDecoration: 'none'
                         }}
                         onMouseOver={(e) => e.currentTarget.style.color = 'var(--text-main)'}
                         onMouseOut={(e) => e.currentTarget.style.color = 'var(--text-secondary)'}
                     >
-                        <Github size={20} />
-                        <span style={{ display: 'none' }} className="sm-show">GitHub</span>
+                        <BookOpen size={20} />
+                        <span className="sm-show">更多资料</span>
                     </a>
                     <button
                         onClick={handleStart}

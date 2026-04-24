@@ -207,6 +207,39 @@ export default function HeroSection({ onStart }) {
                     免费开始使用
                     <ArrowRight size={20} />
                 </button>
+                <a
+                    href="https://lcnawa17x4wt.feishu.cn/wiki/DruEwy887iaIIukTEK6cY84hntF?from=from_copylink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '16px 36px',
+                        fontSize: '1.1rem',
+                        fontWeight: 600,
+                        borderRadius: 'var(--radius-full)',
+                        background: 'var(--glass-bg)',
+                        color: 'var(--text-main)',
+                        border: '1px solid var(--glass-border)',
+                        backdropFilter: 'blur(12px)',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s',
+                        textDecoration: 'none',
+                    }}
+                    onMouseOver={(e) => {
+                        e.currentTarget.style.transform = 'translateY(-2px)';
+                        e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+                        e.currentTarget.style.borderColor = 'var(--primary)';
+                    }}
+                    onMouseOut={(e) => {
+                        e.currentTarget.style.transform = 'translateY(0)';
+                        e.currentTarget.style.boxShadow = 'none';
+                        e.currentTarget.style.borderColor = 'var(--glass-border)';
+                    }}
+                >
+                    更多资料
+                </a>
             </motion.div>
 
             {/* Floating Editor Mockup Widget */}
